@@ -16,7 +16,7 @@ class Answer(models.Model):
     answer_title = models.CharField(max_length=50)
     answer_text = models.CharField(max_length=100)
     is_correct_answer = models.BooleanField()
-    question_foreign_key = models.ForeignKey(Quiz, on_delete = models.CASCADE)
+    question_foreign_key = models.ForeignKey(Question, on_delete = models.CASCADE)
 
 
 
