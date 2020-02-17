@@ -79,11 +79,12 @@ WSGI_APPLICATION = 'mydjangoapp.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'postgres',
-        'USER': 'Zephyr',
-        'PASSWORD': 'Zephyr123',
-        'HOST': 'quizdb.ckbx6suj9hyy.us-east-1.rds.amazonaws.com',
-        'PORT': '5432',
+        'NAME': 'myproject',
+        'USER': 'myprojectuser',
+        'PASSWORD': 'password',
+        #'HOST': 'quizdb.ckbx6suj9hyy.us-east-1.rds.amazonaws.com',
+        #'PORT': '5432',
+        'PORT': '',
     }
 }
 
