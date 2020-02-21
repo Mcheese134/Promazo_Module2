@@ -1,9 +1,12 @@
+{% load bootstrap4 %}
+
 {% if latest_quiz_list %}
     <ul>
     {% for quiz in latest_quiz_list %}
-        <li><a href="{% 'detail' quiz.id}">{{ quiz.quiz_title }}</a></li>
+    <li><a href="{% url 'detail' quiz.id %}">{{ quiz.quiz_title }}</a></li>
     {% endfor %}
     </ul>
 {% else %}
-    <p>No quizzes are available.</p>
+    <p>No polls are available.</p>
 {% endif %}
+
